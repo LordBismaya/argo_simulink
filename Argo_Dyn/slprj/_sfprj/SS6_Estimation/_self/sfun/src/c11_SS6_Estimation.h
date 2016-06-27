@@ -24,6 +24,8 @@ typedef struct {
   boolean_T c11_cov_not_empty;
   real_T c11_State[7];
   boolean_T c11_State_not_empty;
+  real_T *c11_X_1;
+  real_T *c11_Y_1;
   real_T *c11_X_GPS;
   real_T *c11_Y_GPS;
   real_T *c11_aX_IMU;

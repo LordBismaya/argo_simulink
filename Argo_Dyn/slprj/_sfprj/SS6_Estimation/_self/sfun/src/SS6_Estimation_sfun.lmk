@@ -25,8 +25,7 @@ OBJECTS = \
 	"c16_SS6_Estimation.obj"\
 	"c17_SS6_Estimation.obj"\
 	"c18_SS6_Estimation.obj"\
-	"c19_SS6_Estimation.obj"\
-	"c20_SS6_Estimation.obj"\
+	"c21_SS6_Estimation.obj"\
 	"SS6_Estimation_sfun_registry.obj"\
 	"lccstub.obj"\
 	"SS6_Estimation_sfun.def"\
@@ -86,10 +85,8 @@ c17_SS6_Estimation.obj :	"c17_SS6_Estimation.c"
 	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c17_SS6_Estimation.c"
 c18_SS6_Estimation.obj :	"c18_SS6_Estimation.c"
 	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c18_SS6_Estimation.c"
-c19_SS6_Estimation.obj :	"c19_SS6_Estimation.c"
-	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c19_SS6_Estimation.c"
-c20_SS6_Estimation.obj :	"c20_SS6_Estimation.c"
-	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c20_SS6_Estimation.c"
+c21_SS6_Estimation.obj :	"c21_SS6_Estimation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c21_SS6_Estimation.c"
 SS6_Estimation_sfun_registry.obj :	"SS6_Estimation_sfun_registry.c"
 	$(CC) $(CFLAGS) $(INCLUDE_PATH) "SS6_Estimation_sfun_registry.c"
 lccstub.obj :	"C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\mex\lccstub.c"
