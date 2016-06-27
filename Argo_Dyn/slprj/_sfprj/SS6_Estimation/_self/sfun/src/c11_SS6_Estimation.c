@@ -461,16 +461,27 @@ static void c11_chartstep_c11_SS6_Estimation(SFc11_SS6_EstimationInstanceStruct 
   int32_T c11_i4;
   int32_T c11_i5;
   int32_T c11_i6;
+<<<<<<< HEAD
   static real_T c11_dv2[49] = { 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
     0.0001, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0,
     0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0,
     0.0, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0001 };
+=======
+  static real_T c11_dv2[49] = { 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01 };
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
 
   int32_T c11_i7;
   int32_T c11_i8;
   int32_T c11_i9;
   int32_T c11_i10;
+<<<<<<< HEAD
   static real_T c11_dv3[4] = { 0.0001, 0.0, 0.0, 0.0001 };
+=======
+  static real_T c11_dv3[4] = { 0.01, 0.0, 0.0, 0.01 };
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
 
   int32_T c11_i11;
   static real_T c11_a[21] = { 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
@@ -1224,9 +1235,15 @@ static void c11_chartstep_c11_SS6_Estimation(SFc11_SS6_EstimationInstanceStruct 
   }
 
   _SFD_EML_CALL(0U, chartInstance->c11_sfEvent, 60);
+<<<<<<< HEAD
   c11_b_X_1 = chartInstance->c11_State[5];
   _SFD_EML_CALL(0U, chartInstance->c11_sfEvent, 61);
   c11_b_Y_1 = chartInstance->c11_State[6];
+=======
+  c11_b_X_1 = chartInstance->c11_State[4];
+  _SFD_EML_CALL(0U, chartInstance->c11_sfEvent, 61);
+  c11_b_Y_1 = chartInstance->c11_State[5];
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
   _SFD_EML_CALL(0U, chartInstance->c11_sfEvent, 62);
   c11_b_V_x = chartInstance->c11_State[0];
   _SFD_EML_CALL(0U, chartInstance->c11_sfEvent, 63);
@@ -10412,10 +10429,17 @@ extern void utFree(void*);
 
 void sf_c11_SS6_Estimation_get_check_sum(mxArray *plhs[])
 {
+<<<<<<< HEAD
   ((real_T *)mxGetPr((plhs[0])))[0] = (real_T)(1121954543U);
   ((real_T *)mxGetPr((plhs[0])))[1] = (real_T)(4036565571U);
   ((real_T *)mxGetPr((plhs[0])))[2] = (real_T)(170429564U);
   ((real_T *)mxGetPr((plhs[0])))[3] = (real_T)(3070783999U);
+=======
+  ((real_T *)mxGetPr((plhs[0])))[0] = (real_T)(1335145367U);
+  ((real_T *)mxGetPr((plhs[0])))[1] = (real_T)(1869348054U);
+  ((real_T *)mxGetPr((plhs[0])))[2] = (real_T)(1201230045U);
+  ((real_T *)mxGetPr((plhs[0])))[3] = (real_T)(3279748490U);
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
 }
 
 mxArray* sf_c11_SS6_Estimation_get_post_codegen_info(void);
@@ -10429,7 +10453,11 @@ mxArray *sf_c11_SS6_Estimation_get_autoinheritance_info(void)
     autoinheritanceFields);
 
   {
+<<<<<<< HEAD
     mxArray *mxChecksum = mxCreateString("ynfZF7f68KRX4SVzhqPVsD");
+=======
+    mxArray *mxChecksum = mxCreateString("5aEJzxUxmwdlL4PdfXkerD");
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
     mxSetField(mxAutoinheritanceInfo,0,"checksum",mxChecksum);
   }
 
@@ -10771,7 +10799,11 @@ static void chart_debug_initialization(SimStruct *S, unsigned int
 
         /* Initialization of MATLAB Function Model Coverage */
         _SFD_CV_INIT_EML(0,1,1,1,0,0,0,0,0,0,0);
+<<<<<<< HEAD
         _SFD_CV_INIT_EML_FCN(0,0,"eML_blk_kernel",0,-1,1244);
+=======
+        _SFD_CV_INIT_EML_FCN(0,0,"eML_blk_kernel",0,-1,1240);
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
         _SFD_CV_INIT_EML_IF(0,1,0,95,110,-1,146);
         _SFD_SET_DATA_COMPILED_PROPS(0,SF_DOUBLE,0,NULL,0,0,0,0.0,1.0,0,0,
           (MexFcnForType)c11_c_sf_marshallOut,(MexInFcnForType)
@@ -10815,7 +10847,11 @@ static void chart_debug_initialization(SimStruct *S, unsigned int
 
 static const char* sf_get_instance_specialization(void)
 {
+<<<<<<< HEAD
   return "9cAESTshQvVEjJm7tcP3jD";
+=======
+  return "aY9urAb2OYm3ttl6bIt95B";
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
 }
 
 static void sf_opaque_initialize_c11_SS6_Estimation(void *chartInstanceVar)
@@ -10956,10 +10992,17 @@ static void mdlSetWorkWidths_c11_SS6_Estimation(SimStruct *S)
   }
 
   ssSetOptions(S,ssGetOptions(S)|SS_OPTION_WORKS_WITH_CODE_REUSE);
+<<<<<<< HEAD
   ssSetChecksum0(S,(2218938675U));
   ssSetChecksum1(S,(2191342533U));
   ssSetChecksum2(S,(45057731U));
   ssSetChecksum3(S,(3822829524U));
+=======
+  ssSetChecksum0(S,(3856646151U));
+  ssSetChecksum1(S,(3863869251U));
+  ssSetChecksum2(S,(3569751170U));
+  ssSetChecksum3(S,(564045317U));
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
   ssSetmdlDerivatives(S, NULL);
   ssSetExplicitFCSSCtrl(S,1);
   ssSupportsMultipleExecInstances(S,1);

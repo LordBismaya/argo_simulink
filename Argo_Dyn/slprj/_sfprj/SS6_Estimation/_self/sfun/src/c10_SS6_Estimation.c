@@ -402,9 +402,15 @@ static void sf_gateway_c10_SS6_Estimation(SFc10_SS6_EstimationInstanceStruct
     c10_sf_marshallIn);
   CV_EML_FCN(0, 0);
   _SFD_EML_CALL(0U, chartInstance->c10_sfEvent, 4);
+<<<<<<< HEAD
   c10_b_count_L = c10_b_w_L + 0.0001 * c10_randn(chartInstance);
   _SFD_EML_CALL(0U, chartInstance->c10_sfEvent, 5);
   c10_b_count_R = c10_b_w_R + 0.0001 * c10_randn(chartInstance);
+=======
+  c10_b_count_L = c10_b_w_L + 0.01 * c10_randn(chartInstance);
+  _SFD_EML_CALL(0U, chartInstance->c10_sfEvent, 5);
+  c10_b_count_R = c10_b_w_R + 0.01 * c10_randn(chartInstance);
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
   _SFD_EML_CALL(0U, chartInstance->c10_sfEvent, -5);
   _SFD_SYMBOL_SCOPE_POP();
   *chartInstance->c10_count_L = c10_b_count_L;
@@ -3095,10 +3101,17 @@ extern void utFree(void*);
 
 void sf_c10_SS6_Estimation_get_check_sum(mxArray *plhs[])
 {
+<<<<<<< HEAD
   ((real_T *)mxGetPr((plhs[0])))[0] = (real_T)(392965637U);
   ((real_T *)mxGetPr((plhs[0])))[1] = (real_T)(285888733U);
   ((real_T *)mxGetPr((plhs[0])))[2] = (real_T)(2132687234U);
   ((real_T *)mxGetPr((plhs[0])))[3] = (real_T)(3883696371U);
+=======
+  ((real_T *)mxGetPr((plhs[0])))[0] = (real_T)(839902063U);
+  ((real_T *)mxGetPr((plhs[0])))[1] = (real_T)(989001978U);
+  ((real_T *)mxGetPr((plhs[0])))[2] = (real_T)(2988198943U);
+  ((real_T *)mxGetPr((plhs[0])))[3] = (real_T)(2418329351U);
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
 }
 
 mxArray* sf_c10_SS6_Estimation_get_post_codegen_info(void);
@@ -3112,7 +3125,11 @@ mxArray *sf_c10_SS6_Estimation_get_autoinheritance_info(void)
     autoinheritanceFields);
 
   {
+<<<<<<< HEAD
     mxArray *mxChecksum = mxCreateString("vRU7xjquqLOo3QxzmQF1fH");
+=======
+    mxArray *mxChecksum = mxCreateString("IbmeFroW1325KPZ8OZw1rH");
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
     mxSetField(mxAutoinheritanceInfo,0,"checksum",mxChecksum);
   }
 
@@ -3354,7 +3371,11 @@ static void chart_debug_initialization(SimStruct *S, unsigned int
 
         /* Initialization of MATLAB Function Model Coverage */
         _SFD_CV_INIT_EML(0,1,1,0,0,0,0,0,0,0,0);
+<<<<<<< HEAD
         _SFD_CV_INIT_EML_FCN(0,0,"eML_blk_kernel",0,-1,119);
+=======
+        _SFD_CV_INIT_EML_FCN(0,0,"eML_blk_kernel",0,-1,115);
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
         _SFD_SET_DATA_COMPILED_PROPS(0,SF_DOUBLE,0,NULL,0,0,0,0.0,1.0,0,0,
           (MexFcnForType)c10_sf_marshallOut,(MexInFcnForType)NULL);
         _SFD_SET_DATA_COMPILED_PROPS(1,SF_DOUBLE,0,NULL,0,0,0,0.0,1.0,0,0,
@@ -3378,7 +3399,11 @@ static void chart_debug_initialization(SimStruct *S, unsigned int
 
 static const char* sf_get_instance_specialization(void)
 {
+<<<<<<< HEAD
   return "F7ISXg0e6e4OH33X2IsQjD";
+=======
+  return "fCLYWgHf1MQ0lo0Biz9uCC";
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
 }
 
 static void sf_opaque_initialize_c10_SS6_Estimation(void *chartInstanceVar)
@@ -3516,10 +3541,17 @@ static void mdlSetWorkWidths_c10_SS6_Estimation(SimStruct *S)
   }
 
   ssSetOptions(S,ssGetOptions(S)|SS_OPTION_WORKS_WITH_CODE_REUSE);
+<<<<<<< HEAD
   ssSetChecksum0(S,(1078771331U));
   ssSetChecksum1(S,(3881980995U));
   ssSetChecksum2(S,(1990217784U));
   ssSetChecksum3(S,(86088184U));
+=======
+  ssSetChecksum0(S,(763183646U));
+  ssSetChecksum1(S,(574690450U));
+  ssSetChecksum2(S,(400044273U));
+  ssSetChecksum3(S,(2329621277U));
+>>>>>>> 97c418b1f8209f4cdb2c89b2f22d3af95f3621c9
   ssSetmdlDerivatives(S, NULL);
   ssSetExplicitFCSSCtrl(S,1);
   ssSupportsMultipleExecInstances(S,1);
